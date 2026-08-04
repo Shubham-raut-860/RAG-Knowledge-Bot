@@ -1,0 +1,6 @@
+{
+  "name": "RAG AI Customer Support",
+  "description": "An AI customer support platform powered by Retrieval-Augmented Generation. Supports document ingestion, vector databases, role management, and chat history citations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

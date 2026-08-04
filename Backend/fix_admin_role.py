@@ -1,0 +1,10 @@
+import sqlite3
+conn = sqlite3.connect('./app.db')
+conn.execute("UPDATE users SET role='admin' WHERE username='admin'")
+conn.commit()
+cur = conn.cursor()
+cur.execute("SELECT id, username, role FROM users WHERE username='admin'")
+row = cur.fetchone()
+print('After fix:', row)
+conn.close()
+print('Admin role corrected to admin.')
